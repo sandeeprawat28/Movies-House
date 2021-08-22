@@ -1,0 +1,50 @@
+.home {
+  min-height: 100vh;
+}
+
+.home__movies {
+  min-height: 90vh;
+  display: grid;
+  place-items: center;
+  gap: 42px 0px;
+  padding: 1rem;
+}
+
+.home__title {
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+  color: wheat;
+  user-select: none;
+  cursor: pointer;
+  text-shadow: 4px 4px 5px rgba(0,0,0,0.53);
+}
+ 
+/* Layout for mobile devices*/
+@media screen and (max-width: 480px) {
+  .home__movies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Layout for tablets*/
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .home__movies {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Layout for laptops and desktop */
+@media screen and (min-width: 801px) {
+  .home__movies {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .home__title {
+    font-size: 4rem;
+  }
+}

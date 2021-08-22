@@ -1,0 +1,269 @@
+.features-bar {
+  min-height: 10vh;
+  display: flex;
+  z-index: 1;
+  font-size: 1.8vw;
+  user-select: none; 
+  box-shadow: 0px 10px 20px -9px rgba(0,0,0,0.84);
+  -webkit-box-shadow: 0px 10px 20px -9px rgba(0,0,0,0.84);
+  -moz-box-shadow: 0px 10px 20px -9px rgba(0,0,0,0.84);
+}
+
+.features-bar__features-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: 2;
+}
+
+.developer {
+  display: none;
+}
+
+.features-bar__item {
+  transition: transform .2s;
+}
+
+.features-bar__item:hover {
+  color: #e94560;
+  font-weight: 900;
+  transform: scale(1.1);
+  text-shadow: 4px 4px 5px rgba(0,0,0,0.53);
+}
+
+.features-bar__item a:hover {
+  color: #e94560;
+  font-weight: 900;
+  transform: scale(1.1);
+  text-shadow: 4px 4px 5px rgba(0,0,0,0.53); 
+}
+
+.features-bar select {
+  font-size: 1.2vw;
+  outline: none;
+}
+
+.features-bar__search {
+  align-self: center;
+  display: flex;
+}
+
+.features-bar__search input {
+  height: 40px;
+  padding-left: 1rem;
+  border: none;
+}
+
+.features-bar__search input:focus {
+  outline: none;
+}
+
+.features-bar__search button {
+  height: 40px;
+  display: grid;
+  place-content: center;
+  border: none;
+  background: #e94560;
+  cursor: pointer;
+}
+
+.toggle-sidebar {
+  height: 40px;
+  display: none;
+  background-color: #e94560;
+  color: #eeeeee;
+  z-index: 1;
+}
+
+.close-sidebar-btn {
+  min-width: 11vw;
+  border: none;
+  border-radius: 50%;
+  height: 11vw;
+  position: absolute;
+  top: 1.5%;
+  left: 3%;
+  background: none;
+  background-color: #e94560;
+  color: #eeeeee;
+  font-size: 4.4vw;
+  font-weight: bold;
+  box-shadow: 0px 10px 20px -9px rgba(0,0,0,0.84);
+  -webkit-box-shadow: 0px 10px 20px -9px rgba(0,0,0,0.84);
+  -moz-box-shadow: 0px 10px 20px -9px rgba(0,0,0,0.84);
+}
+
+.features-bar__search--hide {
+  display: none;
+}
+
+/* Layout for mobile devices*/
+@media screen and (max-width: 480px) {
+  .features-bar {
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    min-height: fit-content;
+    position: sticky;
+  }
+
+  .developer {
+    display: block;
+    font-size: 1.9vw;
+    padding-top: 10%;
+    color: white;
+    font-weight: 900;
+    text-shadow: 4px 4px 5px rgba(0,0,0,0.53);
+    transition: transform .2s;
+  }
+
+  .developer:hover {
+    color: wheat;
+    transform: scale(1.1);
+  }
+
+  .features-bar__features-list {
+    min-height: 100vh;
+    display: none;
+  }
+  
+  .features-bar__item:hover {
+    color: wheat;
+  }
+  
+  .features-bar__item a:hover {
+    color: wheat;
+  }
+
+  .sidebar {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 0 0 12px 12px;
+    z-index: 1;
+    background: #cc0000;
+    font-size: 7vw;
+    box-shadow: 10px 10px 9px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 9px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 9px -7px rgba(0,0,0,0.75);
+  }
+
+  #list {
+    margin-top: 4%;
+  }
+
+  .features-bar__item {
+    display: block;
+    min-width: 100%;
+    min-height: 10vw;
+    text-align: center;
+    margin: -10%;
+    font-weight: 600;
+    text-shadow: 4px 4px 5px rgba(0,0,0,0.53);
+  }
+  
+  .features-bar__item1 {
+    display: none;
+  }
+
+  .features-bar__search {
+    width: 100vw;
+    font-size: 1.5vw;
+  }
+
+  .features-bar__item select {
+    min-width: 56vw;
+    font-size: 6.7vw;
+  }
+
+  .toggle-sidebar {
+    min-width: 15%;
+    display: grid;
+    place-content: center;
+  }
+
+  .toggle-sidebar,
+  .features-bar__search button {
+    font-size: 4.8vw;
+  }
+  
+  .features-bar__search input {
+    min-width: 70%;
+  }
+
+  .features-bar__search button {
+    min-width: 15%;
+  }
+}
+
+/* Layout for tablets*/
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .features-bar {
+    min-height: 5vh;
+    flex-wrap: wrap;
+  }
+
+  .features-bar__search {
+    width: 22.5vw;
+    margin-right: 1rem;
+  }
+
+  .features-bar__search input {
+    min-width: 85%;
+    height: 30px;
+  }
+
+  .features-bar__search button {
+    min-width: 15%;
+    height: 30px;
+  }
+}
+
+/* Layout for laptops and desktop */
+@media screen and (min-width: 1024px) {
+  .features-bar {
+    position: sticky;
+    top: 0;
+  }
+
+  .features-bar__search {
+    width: 22.5vw;
+    margin-right: 1rem;
+  }
+
+  .features-bar__search input {
+    min-width: 85%;
+    height: 30px;
+    font-size: 1.2vw;
+  }
+
+  .features-bar__search button {
+    min-width: 15%;
+    height: 30px;
+    font-size: 1.2vw;
+  }
+}
+
+/* Bigger screens layout */
+@media screen and (min-width: 1441px) {
+  .features-bar__search {
+    height: 70px;
+  }
+
+  .features-bar__search input,
+  .features-bar__search button {
+    height: 70px;
+  }
+}
+
+/*Look and feel*/
+@media screen and (min-width: 481px) {
+  .features-bar {
+    background-color: #16213e;
+  }
+}
+
+.features-bar__search input::placeholder {
+  color: #000;
+}
