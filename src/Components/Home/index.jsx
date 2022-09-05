@@ -1,3 +1,4 @@
+import React from "react";
 import FeaturesBar from "../FeaturesBar";
 import MovieCard from "../MovieCard";
 import useMoviesApp from "./hooks";

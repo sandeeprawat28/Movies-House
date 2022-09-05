@@ -12,10 +12,11 @@
 }
 
 .movie__poster-image {
-  max-height: 100vh;
+  max-height: 95vh;
   width: 90%;
   margin-top: 5px;
-  margin-left: 10px;
+  margin-left: 20px;
+  cursor: pointer;
   border-radius: 12px;
   box-shadow: 10px 10px 13px -4px rgba(0,0,0,0.55);
   -webkit-box-shadow: 10px 10px 13px -4px rgba(0,0,0,0.55);
@@ -77,6 +78,7 @@
   border-radius: 12px;
   text-align: center;
   transition: transform .2s;
+  cursor: pointer;
 }
 
 .movie__genres li:hover {

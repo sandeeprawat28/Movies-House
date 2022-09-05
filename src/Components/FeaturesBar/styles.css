@@ -25,14 +25,14 @@
 }
 
 .features-bar__item:hover {
-  color: #e94560;
+  color: #03cdffd0;
   font-weight: 900;
   transform: scale(1.1);
   text-shadow: 4px 4px 5px rgba(0,0,0,0.53);
 }
 
 .features-bar__item a:hover {
-  color: #e94560;
+  color: #03cdffd0;
   font-weight: 900;
   transform: scale(1.1);
   text-shadow: 4px 4px 5px rgba(0,0,0,0.53); 
@@ -63,16 +63,17 @@
   display: grid;
   place-content: center;
   border: none;
-  background: #e94560;
+  background: #03cdffd0;
   cursor: pointer;
 }
 
 .toggle-sidebar {
   height: 40px;
   display: none;
-  background-color: #e94560;
+  background-color: #03cdffd0;
   color: #eeeeee;
   z-index: 1;
+  cursor: pointer;
 }
 
 .close-sidebar-btn {
@@ -83,8 +84,9 @@
   position: absolute;
   top: 1.5%;
   left: 3%;
+  cursor: pointer;
   background: none;
-  background-color: #e94560;
+  background-color: #03cdff9a;
   color: #eeeeee;
   font-size: 4.4vw;
   font-weight: bold;
@@ -109,7 +111,7 @@
 
   .developer {
     display: block;
-    font-size: 1.9vw;
+    font-size: 3.5vw;
     padding-top: 10%;
     color: white;
     font-weight: 900;
@@ -142,7 +144,7 @@
     position: relative;
     border-radius: 0 0 12px 12px;
     z-index: 1;
-    background: #cc0000;
+    background: #03cdffad;
     font-size: 7vw;
     box-shadow: 10px 10px 9px -7px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 9px -7px rgba(0,0,0,0.75);

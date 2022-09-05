@@ -4,9 +4,9 @@
 }
 
 .movie-card {
-  width: 20vw;
-  height: 70vh;
-  background-color: rgb(94, 4, 122);
+  width: 21vw;
+  height: 65vh;
+  background: #03cdff67;
   position: relative;
   border-radius: 12px;
   transition: transform .2s;
@@ -16,7 +16,7 @@
 }
 
 .movie-card:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .movie-card__image {

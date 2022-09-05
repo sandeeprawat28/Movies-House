@@ -1,3 +1,5 @@
+import Swal from 'sweetalert2'
+
 export const toggleSideBar = (setToggleSideBar) => {
   setToggleSideBar((prevState) => !prevState);
 };
@@ -10,5 +12,11 @@ export const search = (setQuery, input, setInput) => {
   if (input.trim()) {
     setQuery(input);
     setInput("");
-  } else alert("Invalid Search");
+  } else Swal.fire ({
+    icon: 'error',
+    title: 'Oops...',
+    timer: 2500,
+    showConfirmButton: false,
+    text: 'Please enter valid movie!',
+  })
 };
