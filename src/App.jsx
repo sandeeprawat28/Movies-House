@@ -5,13 +5,13 @@ import MoviesList from "./Components/MoviesLists";
 import Movie from "./Components/Movie";
 import ScrollToTop from "react-scroll-to-top";
 
+
 function App() {
   return (
     <Router basename="/">
       <ScrollToTop smooth component = {
-      <p style = {{ color: "03cdff67" }}>
-        Top
-      </p>} />
+       <h4> Top </h4> }
+      />
       <Switch>
         <Route path="/movie/:id">
           <Movie />

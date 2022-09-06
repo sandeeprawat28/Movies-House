@@ -79,12 +79,12 @@ function FeaturesBar({ fetchByCategory, searchMovies, filterMovies, sortMovies }
             <option hidden defaultValue>
               Genre
             </option>
-            <option value="0" style={{ color: "tomato" }}>
+            <option value="0" style={{ background: "red"}}>
               Clear filter
             </option>
             {genres.map((genre, index) => {
               return (
-                <option key={index} value={genre.id}>
+                <option key={index} value={genre.id} >
                   {genre.name}
                 </option>
               );
@@ -103,10 +103,10 @@ function FeaturesBar({ fetchByCategory, searchMovies, filterMovies, sortMovies }
             <option hidden defaultValue>
               Sort
             </option>
-            <option value="clear" style={{ color: "tomato" }}>
+            <option value="clear" style={{ background: "red" }}>
               Clear Sort
             </option>
-            <option value="year">Release year</option>
+            <option value="year" >Release year</option>
             <option value="popularity">Popularity</option>
             <option value="voted">Most voted</option>
           </select>
