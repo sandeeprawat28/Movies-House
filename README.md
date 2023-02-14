@@ -7,8 +7,6 @@
 
 <img src="https://github.com/sandeeprawat28/Movies-Tracker/blob/master/demo.png" width="100%">
 
-## Project Inspired By : [Movie-Search-Web-App](https://sandeeprawat28.github.io/Movie-Search-Web-App/)
-
 # Tech-Stack :
 <img alt="" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/> <img alt="" src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" /> <img alt="" src="https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white"/> <img alt="" src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"/> <img alt="azure" src="https://img.shields.io/badge/Microsoft_Azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white"/>
 
